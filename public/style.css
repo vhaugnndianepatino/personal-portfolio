@@ -352,3 +352,26 @@ RESPONSIVE STYLES
     .certifications-grid { grid-template-columns: 1fr; }
     .tabs, .showcase-tabs { flex-direction: column; gap: 10px; }
 }
+
+/* === Custom styling for image-only boxes in the About section === */
+.stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.2));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-image {
+  width: 180px;   /* Adjust this size as needed */
+  height: auto;
+  object-fit: contain;
+}

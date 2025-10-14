@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { useState } from "react";
+
 
 function App() {
   useEffect(() => {
@@ -83,7 +85,7 @@ function App() {
           <div className="orbiting-ring ring-3" />
           <img
             src="./images\vhaugnn.jpg"
-            alt="Akhilanandateja Sanga"
+            alt="Vhaugnn Diane Patiño"
             className="hero-image"
           />
         </div>
@@ -100,98 +102,116 @@ function App() {
         <div className="about-left">
           <h2 className="section-heading">About Me</h2>
           <p>
-            I'm a Computer Science and AI student at SR University, specializing
-            in Artificial Intelligence and Machine Learning. As Vice Chair of
-            the AIML Club, I lead AI-driven projects that push innovation. I'm
-            also skilled in competitive programming on platforms like LeetCode
-            and Codeforces, focusing on AI challenges. With additional expertise
-            in Full-Stack and Android Development. Let's collaborate to
-            innovate!
+            Outside of school, I work as a freelance makeup artist and run a small pastry business. 
+            I love expressing myself through these passions and connecting with people through my work. 
+            During my free time, I love traveling with my dog to different islands in the Philippines and 
+            binge-watching my favorite series. These activities allow me to relax, explore new places, 
+            and enjoy life beyond academics.
           </p>
           <blockquote>
-            "Technology is best when it brings people together."
-            <span>– Matt Mullenweg</span>
+            “Let all that you do be done in love.”
+            <span>– 1 Corinthians 16:14</span>
           </blockquote>
-          <a href="#experience" className="btn btn-secondary">
-            See Experience
+          <a href="#showcase" className="btn btn-secondary">
+            See Portfolio
           </a>
         </div>
-        <div className="about-right">
           <div className="stats-grid">
             <div className="stat-card reveal">
-              <i className="fas fa-briefcase" />
-              <h3>3+</h3>
-              <p>Internships</p>
+              <img src="/images\A_makeup.jpg" alt="Stat 1" className="stat-image" />
             </div>
             <div className="stat-card reveal">
-              <i className="fas fa-cogs" />
-              <h3>10+</h3>
-              <p>AI Technologies</p>
+              <img src="/images\A_pastry.jpg" alt="Stat 2" className="stat-image" />
             </div>
             <div className="stat-card reveal">
-              <i className="fas fa-code" />
-              <h3>8+</h3>
-              <p>Projects</p>
+              <img src="/images\A_series.jpg" alt="Stat 3" className="stat-image" />
             </div>
             <div className="stat-card reveal">
-              <i className="fas fa-brain" />
-              <h3>3+</h3>
-              <p>Core Domains</p>
+              <img src="/images\A_travel.jpg" alt="Stat 4" className="stat-image" />
             </div>
           </div>
         </div>
-      </div>
     </section>
-    <section id="education" className="section-wrapper">
-      <h2 className="section-heading">Education</h2>
-      <div className="education-container reveal">
-        <div className="tabs">
-          <button className="tab-link" onclick="openTab(event, 'bachelors')">
-            Bachelors
-          </button>
-          <button className="tab-link" onclick="openTab(event, 'intermediate')">
-            Intermediate
-          </button>
-          <button className="tab-link" onclick="openTab(event, 'schooling')">
-            Schooling
-          </button>
-        </div>
-        <div id="bachelors" className="tab-content">
-          <h3>SR University</h3>
-          <p>
-            <strong>Program:</strong> Computer Science and Engineering
-          </p>
-          <p>
-            <strong>Specialization:</strong> Artificial Intelligence and Machine
-            Learning
-          </p>
-          <p>
-            <strong>Years:</strong> 2022 - 2026
-          </p>
-          <p>
-            <strong>GPA:</strong> 9.0 / 10.0
-          </p>
-        </div>
-        <div id="intermediate" className="tab-content">
-          <h3>Winners Junior College</h3>
-          <p>
-            <strong>Stream:</strong> M.P.C (Maths, Physics, Chemistry)
-          </p>
-          <p>
-            <strong>Marks:</strong> 913 / 1000
-          </p>
-        </div>
-        <div id="schooling" className="tab-content">
-          <h3>Vaagdevi High School</h3>
-          <p>
-            <strong>Board:</strong> S.S.C (Secondary School Certificate)
-          </p>
-          <p>
-            <strong>GPA:</strong> 10.0 / 10.0
-          </p>
-        </div>
-      </div>
-    </section>
+    {/* EDUCATION SECTION */}
+<section id="education" className="section-wrapper">
+  <h2 className="section-heading">Education</h2>
+  <div className="education-container">
+    {(() => {
+      const [activeTab, setActiveTab] = useState("bachelors");
+
+      return (
+        <>
+          <div className="tabs">
+            <button
+              className={`tab-link ${activeTab === "bachelors" ? "active" : ""}`}
+              onClick={() => setActiveTab("bachelors")}
+            >
+              Bachelors
+            </button>
+            <button
+              className={`tab-link ${activeTab === "intermediate" ? "active" : ""}`}
+              onClick={() => setActiveTab("intermediate")}
+            >
+              Intermediate
+            </button>
+            <button
+              className={`tab-link ${activeTab === "schooling" ? "active" : ""}`}
+              onClick={() => setActiveTab("schooling")}
+            >
+              Schooling
+            </button>
+          </div>
+
+          <div
+            id="bachelors"
+            className={`tab-content ${activeTab === "bachelors" ? "active" : ""}`}
+          >
+            <h3>SR University</h3>
+            <p>
+              <strong>Program:</strong> Computer Science and Engineering
+            </p>
+            <p>
+              <strong>Specialization:</strong> Artificial Intelligence and Machine Learning
+            </p>
+            <p>
+              <strong>Years:</strong> 2022 - 2026
+            </p>
+            <p>
+              <strong>GPA:</strong> 9.0 / 10.0
+            </p>
+          </div>
+
+          <div
+            id="intermediate"
+            className={`tab-content ${activeTab === "intermediate" ? "active" : ""}`}
+          >
+            <h3>Winners Junior College</h3>
+            <p>
+              <strong>Stream:</strong> M.P.C (Maths, Physics, Chemistry)
+            </p>
+            <p>
+              <strong>Marks:</strong> 913 / 1000
+            </p>
+          </div>
+
+          <div
+            id="schooling"
+            className={`tab-content ${activeTab === "schooling" ? "active" : ""}`}
+          >
+            <h3>Vaagdevi High School</h3>
+            <p>
+              <strong>Board:</strong> S.S.C (Secondary School Certificate)
+            </p>
+            <p>
+              <strong>GPA:</strong> 10.0 / 10.0
+            </p>
+          </div>
+        </>
+      );
+    })()}
+  </div>
+</section>
+
     <section id="experience" className="section-wrapper">
       <h2 className="section-heading">Work Experience</h2>
       <div className="experience-grid">
