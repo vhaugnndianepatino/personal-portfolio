@@ -24,7 +24,7 @@ function App() {
   <header id="navbar">
     <div className="nav-content">
       <a href="#home" className="nav-logo">
-        AKhilanandateja<b>.</b>
+        Vhaugnn<b></b>
       </a>
       <div className="hamburger" onclick="toggleMenu()">
         <div className="line1" />
@@ -60,16 +60,16 @@ function App() {
       <div className="hero-content">
         <div className="hero-text">
           <p className="intro-text">Hello, my name is</p>
-          <h1 className="hero-name">Akhilanandateja Sanga.</h1>
-          <h2 className="hero-tagline">I build things for the web &amp; AI.</h2>
+          <h1 className="hero-name">Vhaugnn Diane Patiño.</h1>
+          <h2 className="hero-tagline">Project Manager in the making</h2>
           <p className="hero-description">
-            I'm a software developer specializing in Full-Stack Development and
-            Artificial Intelligence. I'm focused on building accessible,
-            human-centered products and exploring the frontiers of machine
-            learning.
+            I’m a 3rd-year Bachelor of Science in Information Systems student at La Verdad Christian College,
+            passionate about technology, creativity, and design. As an aspiring Project Manager, 
+            I’m motivated to combine my creativity with organization and leadership to turn ideas into engaging 
+            and well-executed projects.
           </p>
           <a
-            href="https://drive.google.com/file/d/1yVu6gxHdZKXBO_zfHP1e8mp24NXjkCAT/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sgzSBcBOvU33s6z1tsXiBuH8OX_2X1cs/view?usp=sharing"
             className="btn"
             target="_blank"
             rel="noopener noreferrer"
@@ -82,7 +82,7 @@ function App() {
           <div className="orbiting-ring ring-2" />
           <div className="orbiting-ring ring-3" />
           <img
-            src="./images/aki.png"
+            src="./images\vhaugnn.jpg"
             alt="Akhilanandateja Sanga"
             className="hero-image"
           />
