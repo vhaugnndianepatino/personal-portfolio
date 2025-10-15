@@ -1,28 +1,17 @@
-/*
-  Portfolio CSS
-  Color Palette:
-  - BG: #0F172A (Slate Dark)
-  - Component BG: #1E293B (Slate Medium)
-  - Border: #334155 (Slate Light)
-  - Text Primary: #F1F5F9 (White)
-  - Text Secondary: #94A3B8 (Gray)
-  - Accent 1 (Purple): #7c3aed (Dark Purple)
-  - Accent 2 (Pink): #EC4899
-*/
-
 /* --- Global Styles & Variables --- */
 :root {
-  --bg-color: #0F172A;
-  --component-bg: #1E293B;
-  --border-color: #334155;
-  --text-primary: #F1F5F9;
-  --text-secondary: #94A3B8;
-  --accent-purple: #7c3aed;
-  --accent-pink: #EC4899;
+  --bg-color: #FFF5F8;             
+  --component-bg: #FFE6EF;         
+  --border-color: #F9A8C4;         
+  --text-primary: #2A1B1F;        
+  --text-secondary: #A84E74;      
+  --accent-purple: #FF69B4;       
+  --accent-pink: #FF3D7F;          
   --font-sans: 'Poppins', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
   --header-height: 80px;
 }
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; overflow-x: hidden; }
@@ -64,7 +53,7 @@ body {
 }
 .section-heading::after {
   content: ""; display: block; width: 60px; height: 4px;
-  background: linear-gradient(90deg, var(--accent-purple), var(--accent-pink));
+  background: linear-gradient(90deg, #FFE6EC, #FFD6E0, #FFF2F5);
   border-radius: 2px; position: absolute; bottom: 0; left: 0;
 }
 .btn {
@@ -97,7 +86,9 @@ body {
 /* --- Header & Navigation --- */
 header {
   position: fixed; top: 0; left: 0; width: 100%; z-index: 1001;
-  background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, #FFE6EC, #FFD6E0, #FFF2F5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25); 
   height: var(--header-height);
 }
 .nav-content { display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 100%; }
@@ -148,7 +139,13 @@ header {
 .stat-card p { color: var(--text-secondary); }
 
 /* --- Education Tabs --- */
-.education-container { background-color: var(--component-bg); border-radius: 8px; padding: 30px; }
+.education-container {
+  background: linear-gradient(145deg, rgba(255, 230, 236, 0.8), rgba(255, 245, 250, 0.9));
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25);
+}
 .tabs { display: flex; border-bottom: 1px solid var(--border-color); margin-bottom: 20px; }
 .tab-link {
     background: none; border: none; padding: 10px 20px; cursor: pointer;
@@ -358,7 +355,7 @@ RESPONSIVE STYLES
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(145deg, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.2));
+  background: linear-gradient(145deg, rgba(255, 204, 221, 0.85), rgba(255, 230, 240, 0.9));
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 25px;
