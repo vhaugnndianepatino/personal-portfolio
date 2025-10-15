@@ -32,7 +32,7 @@ function App() {
       <a href="#home" className="nav-logo">
         Vhaugnn<b></b>
       </a>
-      <div className="hamburger" onclick="toggleMenu()">
+      <div className="hamburger" onClick={toggleMenu}>
         <div className="line1" />
         <div className="line2" />
         <div className="line3" />
