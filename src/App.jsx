@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import Home from "./components/Home";
+import About from "./components/About";
+import Education from "./components/Education";
 
 
 function App() {
@@ -45,9 +48,6 @@ function App() {
             <a href="#education">Education</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
             <a href="#showcase">Portfolio</a>
           </li>
           <li>
@@ -58,243 +58,12 @@ function App() {
     </div>
   </header>
   <main>
-    <section id="home" className="section-wrapper hero">
-      <div className="hero-content">
-        <div className="hero-text">
-          <p className="intro-text">Hello, my name is</p>
-          <h1 className="hero-name">Vhaugnn Diane Patiño.</h1>
-          <h2 className="hero-tagline">Project Manager in the making</h2>
-          <p className="hero-description">
-            I’m a 3rd-year Bachelor of Science in Information Systems student at La Verdad Christian College,
-            passionate about technology, creativity, and design. As an aspiring Project Manager, 
-            I’m motivated to combine my creativity with organization and leadership to turn ideas into engaging 
-            and well-executed projects.
-          </p>
-          <a
-            href="https://drive.google.com/file/d/1sgzSBcBOvU33s6z1tsXiBuH8OX_2X1cs/view?usp=sharing"
-            className="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View My Resume
-          </a>
-        </div>
-        <div className="hero-image-container">
-          <div className="orbiting-ring ring-1" />
-          <div className="orbiting-ring ring-2" />
-          <div className="orbiting-ring ring-3" />
-          <img
-            src="./images\vhaugnn.jpg"
-            alt="Vhaugnn Diane Patiño"
-            className="hero-image"
-          />
-        </div>
-      </div>
-      <div className="discover-more">
-        <a href="#about">
-          <span>Discover More</span>
-          <i className="fas fa-chevron-down" />
-        </a>
-      </div>
-    </section>
-    <section id="about" className="section-wrapper">
-      <div className="about-grid reveal">
-        <div className="about-left">
-          <h2 className="section-heading">About Me</h2>
-          <p>
-            Outside of school, I work as a freelance makeup artist and run a small pastry business. 
-            I love expressing myself through these passions and connecting with people through my work. 
-            During my free time, I love traveling with my dog to different islands in the Philippines and 
-            binge-watching my favorite series. These activities allow me to relax, explore new places, 
-            and enjoy life beyond academics.
-          </p>
-          <blockquote>
-            “Let all that you do be done in love.”
-            <span>– 1 Corinthians 16:14</span>
-          </blockquote>
-          <a href="#showcase" className="btn btn-secondary">
-            See Portfolio
-          </a>
-        </div>
-          <div className="stats-grid">
-            <div className="stat-card reveal">
-              <img src="/images\A_makeup.jpg" alt="Stat 1" className="stat-image" />
-            </div>
-            <div className="stat-card reveal">
-              <img src="/images\A_pastry.jpg" alt="Stat 2" className="stat-image" />
-            </div>
-            <div className="stat-card reveal">
-              <img src="/images\A_series.jpg" alt="Stat 3" className="stat-image" />
-            </div>
-            <div className="stat-card reveal">
-              <img src="/images\A_travel.jpg" alt="Stat 4" className="stat-image" />
-            </div>
-          </div>
-        </div>
-    </section>
-    {/* EDUCATION SECTION */}
-<section id="education" className="section-wrapper">
-  <h2 className="section-heading">Education</h2>
-  <div className="education-container">
-    {(() => {
-      const [activeTab, setActiveTab] = useState("bachelors");
+  
+  <Home />
+  <About />
+  <Education />
 
-      return (
-        <>
-          <div className="tabs">
-            <button
-              className={`tab-link ${activeTab === "bachelors" ? "active" : ""}`}
-              onClick={() => setActiveTab("bachelors")}
-            >
-              Bachelors
-            </button>
-            <button
-              className={`tab-link ${activeTab === "intermediate" ? "active" : ""}`}
-              onClick={() => setActiveTab("intermediate")}
-            >
-              Intermediate
-            </button>
-            <button
-              className={`tab-link ${activeTab === "schooling" ? "active" : ""}`}
-              onClick={() => setActiveTab("schooling")}
-            >
-              Schooling
-            </button>
-          </div>
 
-          <div
-            id="bachelors"
-            className={`tab-content ${activeTab === "bachelors" ? "active" : ""}`}
-          >
-            <h3>SR University</h3>
-            <p>
-              <strong>Program:</strong> Computer Science and Engineering
-            </p>
-            <p>
-              <strong>Specialization:</strong> Artificial Intelligence and Machine Learning
-            </p>
-            <p>
-              <strong>Years:</strong> 2022 - 2026
-            </p>
-            <p>
-              <strong>GPA:</strong> 9.0 / 10.0
-            </p>
-          </div>
-
-          <div
-            id="intermediate"
-            className={`tab-content ${activeTab === "intermediate" ? "active" : ""}`}
-          >
-            <h3>Winners Junior College</h3>
-            <p>
-              <strong>Stream:</strong> M.P.C (Maths, Physics, Chemistry)
-            </p>
-            <p>
-              <strong>Marks:</strong> 913 / 1000
-            </p>
-          </div>
-
-          <div
-            id="schooling"
-            className={`tab-content ${activeTab === "schooling" ? "active" : ""}`}
-          >
-            <h3>Vaagdevi High School</h3>
-            <p>
-              <strong>Board:</strong> S.S.C (Secondary School Certificate)
-            </p>
-            <p>
-              <strong>GPA:</strong> 10.0 / 10.0
-            </p>
-          </div>
-        </>
-      );
-    })()}
-  </div>
-</section>
-
-    <section id="experience" className="section-wrapper">
-      <h2 className="section-heading">Work Experience</h2>
-      <div className="experience-grid">
-        <div className="experience-card reveal">
-          <img
-            src="./images/monosage.jpeg"
-            alt="Monosage Thought Works Logo"
-            className="experience-logo"
-          />
-          <h3 className="experience-title">Web Developer Fellow</h3>
-          <div className="company-details">
-            <p className="experience-company">Monosage Thought Works</p>
-            <span className="internship-type">On Site</span>
-          </div>
-          <p className="experience-duration">April 2024 - July 2024</p>
-          <ul>
-            <li>
-              Engaged in hands-on exercises to solidify theoretical knowledge.
-            </li>
-            <li>
-              Strengthened expertise in AI concepts through practical
-              application.
-            </li>
-            <li>
-              Explored various model selection techniques to identify optimal
-              algorithms.
-            </li>
-          </ul>
-        </div>
-        <div className="experience-card reveal">
-          <img
-            src="./images/skill.jpeg"
-            alt="SkillCraft Technology Logo"
-            className="experience-logo"
-          />
-          <h3 className="experience-title">Machine Learning Intern</h3>
-          <div className="company-details">
-            <p className="experience-company">SkillCraft Technology</p>
-            <span className="internship-type">Virtual</span>
-          </div>
-          <p className="experience-duration">July 2024 - Aug 2024</p>
-          <ul>
-            <li>
-              Gained proficiency in TensorFlow, Keras, and other machine
-              learning libraries.
-            </li>
-            <li>
-              Applied deep learning algorithms to solve real-world AI problems.
-            </li>
-            <li>
-              Developed and implemented models using Google Cloud AI tools.
-            </li>
-          </ul>
-        </div>
-        <div className="experience-card reveal">
-          <img
-            src="./images/aicte.png"
-            alt="EduSkills Logo"
-            className="experience-logo"
-          />
-          <h3 className="experience-title">Python Full Stack Developer</h3>
-          <div className="company-details">
-            <p className="experience-company">AICTE - EduSkills Internship</p>
-            <span className="internship-type">Virtual</span>
-          </div>
-          <p className="experience-duration">Oct 2024 - Dec 2024</p>
-          <ul>
-            <li>
-              Completed a 10-week intensive internship focused on Python Full
-              Stack development.
-            </li>
-            <li>
-              Gained hands-on experience in building and deploying web
-              applications.
-            </li>
-            <li>
-              Successfully developed projects, demonstrating proficiency in both
-              frontend and backend technologies.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
     <section id="showcase" className="section-wrapper">
       <div className="showcase-header reveal">
         <h2 className="section-heading">Portfolio Showcase</h2>
@@ -306,19 +75,19 @@ function App() {
         <div className="showcase-tabs">
           <button
             className="showcase-tab"
-            onclick="openShowcaseTab(event, 'showcaseProjects')"
+            onClick={(event) => openShowcaseTab(event, 'showcaseProjects')}
           >
             <i className="fas fa-code" /> Projects
           </button>
           <button
             className="showcase-tab"
-            onclick="openShowcaseTab(event, 'showcaseCerts')"
+            onClick={(event) => openShowcaseTab(event, 'showcaseCerts')}
           >
             <i className="fas fa-certificate" /> Certificates
           </button>
           <button
             className="showcase-tab"
-            onclick="openShowcaseTab(event, 'showcaseSkills')"
+            onClick={(event) => openShowcaseTab(event, 'showcaseSkills')}
           >
             <i className="fas fa-layer-group" /> Tech Stack
           </button>
