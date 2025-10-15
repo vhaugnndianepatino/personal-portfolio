@@ -15,19 +15,19 @@ The purpose of this portfolio is to provide a professional yet personal platform
 This portfolio consists of several key sections:
 
 
-### **1\. Resume Section**
+### **1\. Home Section**
 
 
-*   A downloadable PDF version of my professional resume, summarizing my work experience, key accomplishments, and skills.
+*    A personal overview of who I am, my passion and what I aspire to be in the future. A downloadable PDF version of my professional resume, summarizing my work experience, key accomplishments, and skills.
 
 
-### **2\. Biography Page**
+### **2\. About Page**
 
 
-*   A personal overview of who I am, my educational background, and my interests.
+*   Another overview of who I am outside school. My part time hustles and my interests.
 
 
-*   A visual presentation of the programming languages, frameworks, and tools I am proficient in.
+*   A visual presentation of my personal interests.
 
 
 ### **3\. Education Page**
