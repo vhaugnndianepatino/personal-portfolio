@@ -34,7 +34,7 @@ function Showcase() {
         <div className="project-grid-container">
           <div className="project-card reveal">
             <div className="project-image">
-              <img src="/images\Ab_portfolio.jpg" alt="Car Rental Website" />
+              <img src="./images\Ab_portfolio.jpg" alt="Car Rental Website" />
             </div>
             <div className="project-content">
               <h3 className="project-title">Personal Portfolio</h3>
@@ -63,7 +63,7 @@ function Showcase() {
           <div className="project-card reveal">
             <div className="project-image">
               <img
-                src="public\images\Ab_lvcis.jpg"
+                src="./images\Ab_lvcis.jpg"
                 alt="Potato Leaf Disease Detection"
               />
             </div>
@@ -93,7 +93,7 @@ function Showcase() {
           </div>
           <div className="project-card reveal">
             <div className="project-image">
-              <img src="/images\Ab_dev.png" alt="WordPress Website" />
+              <img src="./images\Ab_dev.png" alt="WordPress Website" />
             </div>
             <div className="project-content">
               <h3 className="project-title">The Dev's Game</h3>
@@ -136,7 +136,7 @@ function Showcase() {
         <div className="certifications-grid">
           <div className="certificate-card reveal">
             <img
-              src="/images\Cert2.jpg"
+              src="./images\Cert2.jpg"
               alt="Associate in Computer Technology"
             />
             <div className="card-overlay">
@@ -145,7 +145,7 @@ function Showcase() {
           </div>
           <div className="certificate-card reveal">
             <img
-              src="/images\Cert4.jpg"
+              src="./images\Cert4.jpg"
               alt="Student Government Leadership"
             />
             <div className="card-overlay">
@@ -154,7 +154,7 @@ function Showcase() {
           </div>
           <div className="certificate-card reveal">
             <img
-              src="/images\Cert1.jpg"
+              src="./images\Cert1.jpg"
               alt="Dean's Lister"
             />
             <div className="card-overlay">
@@ -163,7 +163,7 @@ function Showcase() {
           </div>
           <div className="certificate-card reveal">
             <img
-              src="/images\Cert5.jpg"
+              src="./images\Cert5.jpg"
               alt="Work Immersion Completion"
             />
             <div className="card-overlay">
@@ -172,7 +172,7 @@ function Showcase() {
           </div>
           <div className="certificate-card reveal">
             <img
-              src="public\images\Cert3.jpg"
+              src=".\images\Cert3.jpg"
               alt="Senior High School Graduate"
             />
             <div className="card-overlay">

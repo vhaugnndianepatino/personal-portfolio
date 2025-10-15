@@ -22,16 +22,16 @@ function About() {
             </div>
               <div className="stats-grid">
                 <div className="stat-card reveal">
-                  <img src="/images\A_makeup.jpg" alt="Stat 1" className="stat-image" />
+                  <img src="./images\A_makeup.jpg" alt="Stat 1" className="stat-image" />
                 </div>
                 <div className="stat-card reveal">
-                  <img src="/images\A_pastry.jpg" alt="Stat 2" className="stat-image" />
+                  <img src="./images\A_pastry.jpg" alt="Stat 2" className="stat-image" />
                 </div>
                 <div className="stat-card reveal">
-                  <img src="/images\A_series.jpg" alt="Stat 3" className="stat-image" />
+                  <img src="./images\A_series.jpg" alt="Stat 3" className="stat-image" />
                 </div>
                 <div className="stat-card reveal">
-                  <img src="/images\A_travel.jpg" alt="Stat 4" className="stat-image" />
+                  <img src="./images\A_travel.jpg" alt="Stat 4" className="stat-image" />
                 </div>
               </div>
             </div>
